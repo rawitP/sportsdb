@@ -1,0 +1,23 @@
+{
+  "name": "sportsdb",
+  "version": "1.0.0",
+  "description": " ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rawitP/sportsdb.git"
+  },
+  "author": "Rawit Panjaroen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rawitP/sportsdb/issues"
+  },
+  "homepage": "https://github.com/rawitP/sportsdb#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
