@@ -10,22 +10,23 @@ html
             button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation")
                 span.navbar-toggler-icon
             div#navbarNav.collapse.navbar-collapse
-                ul.navbar-nav
+                ul.navbar-nav.mr-auto
                     li.nav-item
                         a.nav-link(href="/")
                             | Home 
                             span.sr-only (current)
-                    li.nav-item
-                        a.nav-link(href="/articles/add") Add Article
-            ul.navbar-nav.navbar-right
-                if user
-                    li.nav-item
-                        a.nav-link(href='/users/logout') logout
-                else 
-                    li.nav-item
-                        a.nav-link(href='/users/register') Register
-                    li.nav-item
-                        a.nav-link(href='/users/login') Login
+                    if user
+                        li.nav-item
+                            a.nav-link(href="/articles/add") Add Article
+                ul.navbar-nav
+                    if user
+                        li.nav-item
+                            a.nav-link(href='/users/logout') logout
+                    else 
+                        li.nav-item
+                            a.nav-link(href='/users/register') Register
+                        li.nav-item
+                            a.nav-link(href='/users/login') Login
         .container
             br
             != messages('message', locals)
